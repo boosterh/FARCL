@@ -1,4 +1,4 @@
-'
+un <- '
 #Note, the data contain x1-3 and y1-3
 #Latent mean Structure with intercepts
 
@@ -12,9 +12,9 @@ y1 ~ pi1*1
 y2 ~ pi2*1
 y3 ~ pi3*1
 
-kappa ~~ 0*kappa #variance nope
-omega ~~ 0*omega #variance nope
-kappa ~~ 0*omega #covariance not even
+kappa ~~ kappa #variance 
+omega ~~ omega #variance 
+kappa ~~ omega #covariance 
 
 #laten vars for AR and cross-lagged effects
 p1 =~ 1*x1 #each factor loading set to 1
